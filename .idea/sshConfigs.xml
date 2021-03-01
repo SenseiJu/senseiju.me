@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="178.170.41.6" id="4f3fcb27-9c32-430a-bf92-1a7f3922b2f4" keyPath="C:\Users\chath\OneDrive\Documents\SSH Keys\IKOULA - senseiju.ppk" port="22" nameFormat="DESCRIPTIVE" username="senseiju" />
+    </configs>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6ea37776-5f7a-4c03-b110-a99fc3aed263" name="IKOULA Dedi" url="http://senseiju.me">
+        <fileTransfer rootFolder="/var/www/senseiju" accessType="SFTP" host="178.170.41.6" port="22" sshConfigId="4f3fcb27-9c32-430a-bf92-1a7f3922b2f4" sshConfig="senseiju@178.170.41.6:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
