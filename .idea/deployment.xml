@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="IKOULA Dedi" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="IKOULA Dedi" uploadOnCheckin="6ea37776-5f7a-4c03-b110-a99fc3aed263" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="IKOULA Dedi">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="IKOULA Dedi" />
   </component>
 </project>

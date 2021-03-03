@@ -1,0 +1,97 @@
+body {
+    background-color: #292929;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+}
+
+@media all and (min-width: 960px) {
+    body {
+        margin: 5% 20%;
+    }
+
+    .section-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .section-list li {
+        position: relative;
+        left: -150%;
+        overflow: auto;
+        display: flex;
+    }
+
+    .section-list div {
+        flex: 1;
+    }
+
+    .section-list li h1 {
+        color: orange;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .section-list li img {
+        border-radius: 10px;
+    }
+
+    .section-list li:nth-child(4n - 1) img {
+        margin-right: 5%;
+    }
+
+    .section-list li:nth-child(4n - 1) h1 {
+        margin-right: 5%;
+        text-align: right;
+    }
+
+    .section-list li:nth-child(4n - 3) img {
+        margin-left: 5%;
+    }
+
+    .section-list .gradient-spacer {
+        left: 150%;
+        width: 90%;
+        margin: 7% auto;
+        display: block;
+    }
+
+    .section-list .gradient-spacer div {
+        border-radius: 20px;
+        background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d,
+        #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+        background-size: 1800% 1800%;
+        height: 7px;
+        animation: rainbow 20s ease infinite;
+    }
+
+    .section-list .animate {
+        animation: slide 1s forwards, fadein ease 2s;
+    }
+
+    @keyframes rainbow {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes slide {
+        100% {
+            left: 0;
+        }
+    }
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+}
