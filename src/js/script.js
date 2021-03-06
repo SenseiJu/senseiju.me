@@ -9,7 +9,7 @@ function animateNextSection() {
     }
 }
 
-const animateInterval = setInterval(animateNextSection, 500)
+const animateInterval = setInterval(animateNextSection, 400)
 
 window.addEventListener('load', function () {
     animateNextSection()
