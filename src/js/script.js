@@ -1,19 +1,37 @@
 const sectionListElements = document.getElementById("section-list").getElementsByTagName("li");
 
-let i = 0;
-function animateNextSection() {
-    sectionListElements[i].classList.add("animate")
+window.addEventListener('load', animateSections)
+window.addEventListener('scroll', animateSections)
 
-    if (sectionListElements.length <= ++i) {
-        clearInterval(animateInterval)
+let animating = false
+async function animateSections() {
+    if (animating) {
+        return
     }
+
+    animating = true
+
+    for (let i = 0; i < sectionListElements.length; i++) {
+        let element = sectionListElements[i]
+        if (element.classList.contains("animate")) {
+            continue
+        }
+
+        let rect = element.getBoundingClientRect()
+        if (rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+            element.classList.add("animate")
+            await sleep(400)
+        }
+    }
+
+    animating = false
 }
 
-const animateInterval = setInterval(animateNextSection, 400)
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-window.addEventListener('load', function () {
-    animateNextSection()
-})
+
 
 function calculateCurrentAge() {
     const born = new Date(2000, 11, 7)
