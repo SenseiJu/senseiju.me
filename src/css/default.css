@@ -22,6 +22,10 @@ body {
     border-radius: 10px;
 }
 
+.section-list li h1 .header-bar {
+    font-size: 1.5em
+}
+
 .section-list li h1 {
     color: orange;
     font-weight: bold;
