@@ -18,7 +18,7 @@ async function animateSections() {
         }
 
         let rect = element.getBoundingClientRect()
-        if (rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+        if (rect.top <= (window.innerHeight || document.documentElement.clientHeight)) {
             element.classList.add("animate")
             await sleep(400)
         }

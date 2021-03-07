@@ -13,16 +13,13 @@ body {
 
 .section-list li {
     display: flex;
+    position: relative;
+    left: -150%;
+    overflow: auto;
 }
 
 .section-list li img {
     border-radius: 10px;
-}
-
-.section-list li {
-    position: relative;
-    left: -150%;
-    overflow: auto;
 }
 
 .section-list li h1 {
@@ -40,7 +37,8 @@ body {
     left: 150%;
     width: 90%;
     margin: 10% auto;
-    display: block;
+    display: none;
+    overflow: auto;
 }
 
 .section-list .gradient-spacer div {
@@ -54,6 +52,7 @@ body {
 
 .section-list .animate {
     animation: slide 1s forwards, fadein ease 2s;
+    display: flex;
 }
 
 @keyframes rainbow {
