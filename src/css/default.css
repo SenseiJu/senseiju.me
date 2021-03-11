@@ -1,9 +1,21 @@
 body {
-    background-color: #292929;
+    background-color: black;
     color: white;
     font-family: "Segoe UI", sans-serif;
     margin: 10% 5%;
     overflow-x: hidden;
+}
+
+#background {
+    content: "";
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .section-list {
