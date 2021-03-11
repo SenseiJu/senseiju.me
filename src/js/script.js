@@ -30,17 +30,3 @@ async function animateSections() {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
-
-
-function calculateCurrentAge() {
-    const born = new Date(2000, 11, 7)
-    const now = new Date();
-    const diff = Math.abs(now - born);
-
-    const placeholderElement = document.getElementById("age-placeholder")
-    placeholderElement.innerText = placeholderElement.innerText
-        .replace("{{age}}", Math.floor(diff / (1000 * 60 * 60 * 24 * 365)).toString())
-}
-
-calculateCurrentAge()
