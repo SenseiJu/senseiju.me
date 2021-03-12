@@ -30,22 +30,26 @@ body::before {
     overflow: auto;
 }
 
-.section-list li img {
+.section-list .content-container {
+    display: flex;
+}
+
+.section-list .content-container img {
     border-radius: 10px;
 }
 
-.section-list li h1 .header-bar {
+.section-list .content-container h1 .header-bar {
     font-size: 1.25em;
 }
 
-.section-list li h1 {
+.section-list .content-container h1 {
     color: orange;
     font-weight: bold;
     margin-top: 0;
 }
 
-.section-list li:nth-child(4n - 1) h1,
-.section-list li:nth-child(4n - 1) p {
+.section-list li:nth-child(4n - 1) .content-container h1,
+.section-list li:nth-child(4n - 1) .content-container p {
     text-align: right;
 }
 
@@ -58,6 +62,7 @@ body::before {
 }
 
 .section-list .gradient-spacer div {
+    flex: 1;
     border-radius: 20px;
     background: linear-gradient(124deg, #f85131, #e81d1d, #e8b71d,
     #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
@@ -99,16 +104,16 @@ body::before {
 }
 
 @media all and (max-width: 960px) {
-    .section-list li {
+    .section-list .content-container {
         flex-direction: column;
         justify-content: center;
     }
 
-    .section-list li div {
+    .section-list .content-container div {
         order: -1;
     }
 
-    .section-list li img {
+    .section-list .content-container img {
         justify-content: center;
         margin: 5% auto;
     }
@@ -119,7 +124,7 @@ body::before {
         margin: 5% 20%;
     }
 
-    .section-list li div {
+    .section-list .gradient-spacer div {
         flex: 1;
     }
 
@@ -127,11 +132,11 @@ body::before {
         margin: 7% auto;
     }
 
-    .section-list li:nth-child(4n - 1) img {
+    .section-list li:nth-child(4n - 1) .content-container img {
         margin-right: 5%;
     }
 
-    .section-list li:nth-child(4n - 3) img {
+    .section-list li:nth-child(4n - 3) .content-container img {
         margin-left: 5%;
     }
 
