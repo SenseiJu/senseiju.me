@@ -2,11 +2,15 @@ body {
     background-color: black;
     color: white;
     font-family: "Segoe UI", sans-serif;
-    margin: 10% 5%;
+    margin: 0;
     overflow-x: hidden;
 }
 
-body::before {
+#main-page {
+    padding: 10% 5%;
+}
+
+#main-page::before {
     content: "";
     background-image: url("../img/background.jpg");
     background-size: cover;
@@ -26,23 +30,45 @@ body::before {
 .section-list li {
     display: flex;
     position: relative;
-    left: -150%;
     overflow: auto;
 }
 
-.section-list .content-container {
+.section {
+    left: -150%;
+}
+
+.section button {
+    margin: 5% auto 0;
+    height: 75px;
+    font-size: 1em;
+    font-weight: bold;
+    width: 40%;
+    color: white;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 20px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.6);
+    transition-duration: 0.4s;
+}
+
+.section {
+    flex-direction: column;
+}
+
+.content-container {
     display: flex;
 }
 
-.section-list .content-container img {
+.content-container img {
     border-radius: 10px;
 }
 
-.section-list .content-container h1 .header-bar {
+.content-container h1 .header-bar {
     font-size: 1.25em;
 }
 
-.section-list .content-container h1 {
+.content-container h1 {
     color: orange;
     font-weight: bold;
     margin-top: 0;
@@ -53,15 +79,14 @@ body::before {
     text-align: right;
 }
 
-.section-list .gradient-spacer {
-    left: 150%;
+.gradient-spacer {
+    left: -150%;
     width: 90%;
     margin: 10% auto;
     display: none;
-    overflow: auto;
 }
 
-.section-list .gradient-spacer div {
+.gradient-spacer div {
     flex: 1;
     border-radius: 20px;
     background: linear-gradient(124deg, #f85131, #e81d1d, #e8b71d,
@@ -71,7 +96,7 @@ body::before {
     animation: rainbow 20s ease infinite;
 }
 
-.section-list .animate {
+.animate {
     animation: slide 1s forwards, fadein ease 2s;
     display: flex;
 }
@@ -104,32 +129,44 @@ body::before {
 }
 
 @media all and (max-width: 960px) {
-    .section-list .content-container {
+    .section button {
+        width: 90%;
+    }
+
+    .content-container {
         flex-direction: column;
         justify-content: center;
     }
 
-    .section-list .content-container div {
+    .content-container div {
         order: -1;
     }
 
-    .section-list .content-container img {
+    .content-container img {
         justify-content: center;
         margin: 5% auto;
     }
 }
 
 @media all and (min-width: 960px) {
-    body {
-        margin: 5% 20%;
+    #main-page {
+        padding: 5% 20%;
     }
 
-    .section-list .gradient-spacer div {
+    .gradient-spacer div {
         flex: 1;
     }
 
-    .section-list .gradient-spacer {
+    .gradient-spacer {
         margin: 7% auto;
+        left: 150%;
+    }
+
+    .section button:hover {
+        color: #1ddde8;
+        transition-duration: 0.4s;
+        background: rgba(0, 0, 0, 0.8);
+        font-size: 1.05em;
     }
 
     .section-list li:nth-child(4n - 1) .content-container img {
