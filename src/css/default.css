@@ -6,11 +6,7 @@ body {
     overflow-x: hidden;
 }
 
-#main-page {
-    padding: 10% 5%;
-}
-
-#main-page::before {
+body::before {
     content: "";
     background-image: url("../img/background.jpg");
     background-size: cover;
@@ -24,17 +20,14 @@ body {
 
 .section-list {
     list-style-type: none;
-    padding: 0;
+    padding: 5% 5%;
+    margin: 0;
 }
 
 .section-list li {
     display: flex;
     position: relative;
     overflow: auto;
-}
-
-.section {
-    left: -150%;
 }
 
 .section button {
@@ -53,6 +46,7 @@ body {
 }
 
 .section {
+    left: -150%;
     flex-direction: column;
 }
 
@@ -149,7 +143,7 @@ body {
 }
 
 @media all and (min-width: 960px) {
-    #main-page {
+    .section-list {
         padding: 5% 20%;
     }
 
