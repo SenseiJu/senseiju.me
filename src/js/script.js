@@ -30,3 +30,7 @@ async function animateSections() {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
