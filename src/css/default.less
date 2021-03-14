@@ -22,12 +22,13 @@ body::before {
   opacity: 0.7;
 }
 
-#contact-me-page::before {
-  background-image: url("../img/contact-me-background.jpg");
+#projects::before {
+  background-image: url("../img/projects-background.jpg");
   opacity: 0.8;
 }
 
 main {
+  position: absolute;
   padding: 5% 5%;
 }
 
@@ -48,6 +49,7 @@ h1 {
 .section-list {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 .section-list li {
@@ -112,6 +114,24 @@ h1 {
 
 .animate {
   animation: slide 1s forwards, fadein ease 2s;
+}
+
+#contact-details {
+  list-style-type: none;
+  padding: 0;
+  margin: 3% auto 0;
+  float: right;
+  font-weight: bold;
+}
+
+#contact-details li {
+  margin: 15px 0 15px 0 ;
+}
+
+#contact-details p {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.05em;
 }
 
 @keyframes rainbow {
@@ -188,6 +208,10 @@ h1 {
 
   .section-list li:nth-child(4n - 3) .content-container img {
     margin-left: 5%;
+  }
+
+  #contact-details p {
+    font-size: 1.5em;
   }
 
   ::-webkit-scrollbar-track {

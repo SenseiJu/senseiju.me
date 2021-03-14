@@ -13,13 +13,19 @@ async function animateSections() {
 
     for (let i = 0; i < sectionListElements.length; i++) {
         let element = sectionListElements[i]
-        if (element.classList.contains("animate")) {
+        let classList = element.classList
+
+        if (!(classList.contains("section") || classList.contains("gradient-spacer"))) {
+            continue
+        }
+
+        if (classList.contains("animate")) {
             continue
         }
 
         let rect = element.getBoundingClientRect()
         if (rect.top <= (window.innerHeight || document.documentElement.clientHeight)) {
-            element.classList.add("animate")
+            classList.add("animate")
             await sleep(400)
         }
     }
