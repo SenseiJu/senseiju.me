@@ -29,6 +29,18 @@ h1 {
     width: 60%;
     padding: 5% 20%;
   }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: #292929;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #555;
+  }
 }
 #main-page::before {
   background-image: url("../img/main-background.jpg");
@@ -181,18 +193,6 @@ h1 {
   }
   #main-page #contact-details p {
     font-size: 1.5em;
-  }
-  #main-page ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-  #main-page ::-webkit-scrollbar {
-    width: 12px;
-    background-color: #292929;
-  }
-  #main-page ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #555;
   }
 }
 #projects-page::before {
