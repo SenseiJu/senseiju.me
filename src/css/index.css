@@ -19,7 +19,7 @@ body::before {
   background-image: url("../img/main-background.jpg");
   opacity: 0.7;
 }
-#projects::before {
+#projects-page::before {
   background-image: url("../img/projects-background.jpg");
   opacity: 0.8;
 }
@@ -48,6 +48,10 @@ h1 {
   position: relative;
   overflow: auto;
 }
+.section {
+  left: -150%;
+  flex-direction: column;
+}
 .section button {
   margin: 5% auto 0;
   height: 75px;
@@ -62,21 +66,16 @@ h1 {
   background: rgba(0, 0, 0, 0.6);
   transition-duration: 0.4s;
 }
-.section {
-  left: -150%;
-  flex-direction: column;
-}
 .content-container {
   display: flex;
 }
 .content-container img {
   border-radius: 10px;
 }
-.content-container h1 .header-bar {
+.content-container .header-bar {
   font-size: 1.25em;
 }
-.section-list li:nth-child(4n - 1) .content-container h1,
-.section-list li:nth-child(4n - 1) .content-container p {
+.section-list li:nth-child(4n - 1) .content-container {
   text-align: right;
 }
 .gradient-spacer {
@@ -155,12 +154,12 @@ h1 {
   main {
     padding: 5% 20%;
   }
+  .gradient-spacer {
+    left: 150%;
+    margin: 7% auto;
+  }
   .gradient-spacer div {
     flex: 1;
-  }
-  .gradient-spacer {
-    margin: 7% auto;
-    left: 150%;
   }
   .section button:hover {
     color: #1ddde8;
