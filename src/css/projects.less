@@ -2,17 +2,6 @@
   background-image: url("../img/projects-background.jpg");
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-}
-
-#left-column,
-#right-column {
-  flex: 1;
-  height: 100px;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -29,5 +18,18 @@ a {
 }
 
 img {
+  margin-top: 5%;
   width: 50%;
+}
+
+@media all and (min-width: 960px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #left-column,
+  #right-column {
+    flex: 1;
+  }
 }
