@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="5a7e7a7f-3ee1-44cc-a52c-504f8904b722" name="OVH VPS" url="http://senseiju.me">
+        <fileTransfer rootFolder="/var/www/senseiju.me" accessType="SFTP" host="51.195.219.7" port="22" sshConfigId="20deab5f-5dc5-4b04-8f37-49c138f559a9" sshConfig="senseiju@51.195.219.7:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

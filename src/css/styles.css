@@ -46,10 +46,6 @@ h1 {
   background-image: url("../img/main-background.jpg");
   opacity: 0.7;
 }
-#main-page h1 {
-  color: orange;
-  margin-top: 0;
-}
 #main-page .left {
   left: -150%;
 }

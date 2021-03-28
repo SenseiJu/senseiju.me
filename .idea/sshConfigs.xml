@@ -3,6 +3,7 @@
   <component name="SshConfigs">
     <configs>
       <sshConfig host="178.170.41.6" id="4f3fcb27-9c32-430a-bf92-1a7f3922b2f4" keyPath="C:\Users\chath\OneDrive\Documents\SSH Keys\IKOULA - senseiju.ppk" port="22" nameFormat="DESCRIPTIVE" username="senseiju" />
+      <sshConfig host="51.195.219.7" id="20deab5f-5dc5-4b04-8f37-49c138f559a9" keyPath="C:\Users\chath\OneDrive\Documents\SSH Keys\OVH VPS - Websites [User - senseiju].ppk" port="22" nameFormat="DESCRIPTIVE" username="senseiju" />
     </configs>
   </component>
 </project>

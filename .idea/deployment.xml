@@ -9,6 +9,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="OVH VPS">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/src" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
     <option name="myUploadOnCheckinName" value="IKOULA Dedi" />
   </component>
