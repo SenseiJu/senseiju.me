@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="IKOULA Dedi" uploadOnCheckin="6ea37776-5f7a-4c03-b110-a99fc3aed263" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="OVH VPS" uploadOnCheckin="5a7e7a7f-3ee1-44cc-a52c-504f8904b722" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="IKOULA Dedi">
         <serverdata>
@@ -17,6 +17,6 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="IKOULA Dedi" />
+    <option name="myUploadOnCheckinName" value="OVH VPS" />
   </component>
 </project>
